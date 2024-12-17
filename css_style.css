@@ -1,0 +1,113 @@
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #0044cc;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header .logo img {
+    width: 100px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 20px 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#intro {
+    background-color: #f0f8ff;
+}
+
+.tjeneste {
+    margin: 20px 0;
+}
+
+.tjeneste h3 {
+    color: #0044cc;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+#kontakt form {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#kontakt input, #kontakt textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+#kontakt button {
+    background-color: #0044cc;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+#intro h1, #tjenester h2 {
+    animation: fadeIn 2s ease-out;
+}
+
+.tjeneste {
+    opacity: 0;
+    animation: fadeIn 1.5s ease-out forwards;
+}
+
+.tjeneste:nth-child(1) {
+    animation-delay: 0.5s;
+}
+
+.tjeneste:nth-child(2) {
+    animation-delay: 1s;
+}
+
+.tjeneste:nth-child(3) {
+    animation-delay: 1.5s;
+}
